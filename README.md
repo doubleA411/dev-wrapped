@@ -13,7 +13,7 @@ A CLI tool that generates a beautiful year-end wrapped for developers using Git 
 ## Installation
 
 ```bash
-npm install -g wrap-it
+npm install -g @doublea0411/wrap-it
 ```
 
 Or use with npx (no installation required):
@@ -37,6 +37,7 @@ wrap
 ```
 
 The tool will:
+
 1. Analyze your Git history for the current year
 2. Display stats in your terminal
 3. Generate a beautiful PNG image (`developer-wrapped-2025.png`)
@@ -50,16 +51,19 @@ The tool will:
 ### Installing Cairo (for image generation)
 
 **macOS:**
+
 ```bash
 brew install pkg-config cairo pango libpng jpeg giflib librsvg
 ```
 
 **Ubuntu/Debian:**
+
 ```bash
 sudo apt-get install build-essential libcairo2-dev libpango1.0-dev libjpeg-dev libgif-dev librsvg2-dev
 ```
 
 **Windows:**
+
 - Follow the [node-canvas Windows installation guide](https://github.com/Automattic/node-canvas/wiki/Installation:-Windows)
 
 ## What You Get
