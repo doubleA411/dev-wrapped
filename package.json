@@ -25,7 +25,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/wrap-it.git"
+    "url": "https://github.com/doubleA411/dev-wrapped.git"
   },
   "scripts": {
     "build": "tsc",
