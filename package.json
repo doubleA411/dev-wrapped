@@ -1,0 +1,53 @@
+{
+  "name": "wrap-it",
+  "version": "1.0.0",
+  "description": "A CLI tool to generate a year-end wrapped for developers using Git data",
+  "main": "dist/cli.js",
+  "bin": {
+    "wrap-it": "./dist/cli.js",
+    "wrap": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "fonts",
+    "README.md"
+  ],
+  "keywords": [
+    "git",
+    "wrapped",
+    "developer",
+    "year-in-review",
+    "github",
+    "stats",
+    "cli"
+  ],
+  "author": "Akash S",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/wrap-it.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "boxen": "^5.1.2",
+    "canvas": "^2.11.2",
+    "chalk": "^4.1.2",
+    "date-fns": "^2.30.0",
+    "figlet": "^1.7.0",
+    "gradient-string": "^2.0.2",
+    "ora": "^5.4.1",
+    "sharp": "^0.32.6",
+    "simple-git": "^3.20.0",
+    "terminal-image": "^1.2.1"
+  },
+  "devDependencies": {
+    "@types/gradient-string": "^1.1.6",
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.0"
+  }
+}
