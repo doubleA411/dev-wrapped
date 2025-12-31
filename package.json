@@ -1,5 +1,5 @@
 {
-  "name": "wrap-it",
+  "name": "@doublea0411/wrap-it",
   "version": "1.0.0",
   "description": "A CLI tool to generate a year-end wrapped for developers using Git data",
   "main": "dist/cli.js",
