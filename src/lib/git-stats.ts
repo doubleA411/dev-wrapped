@@ -23,7 +23,7 @@ export interface GitStats {
   authorEmail: string;
 }
 
-export async function getGitStats(repoPath: string = '.', authorEmail?: string): Promise<GitStats> {
+export async function getGitStats(repoPath: string = '.', authorEmail?: string, year?: number): Promise<GitStats> {
   const git: SimpleGit = simpleGit(repoPath);
   
   // Get repository name from the remote URL or folder name
@@ -59,7 +59,8 @@ export async function getGitStats(repoPath: string = '.', authorEmail?: string):
     // If can't get config, try to get from commits
   }
   
-  const currentYear = new Date().getFullYear();
+  // Use provided year or default to current year
+  const currentYear = year || new Date().getFullYear();
   const yearStart = startOfYear(new Date(currentYear, 0, 1));
   const yearEnd = endOfYear(new Date(currentYear, 0, 1));
   
